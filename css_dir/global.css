@@ -17,7 +17,20 @@
 body {
   color: var(--txt-color);
   /* background-color: #0f172a; */
-  background-color: rgb(0, 30, 60);
+  /* background-color: rgb(0, 30, 60); */
+  background: var(--bg-color1); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--bg-color2),
+    var(--bg-color3),
+    var(--bg-color1)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--bg-color2),
+    var(--bg-color3),
+    var(--bg-color1)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Ch*/
 }
 div {
   margin: 0.2rem;
