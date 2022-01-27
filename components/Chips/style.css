@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--primary-color);
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #5b21b6;
+  --white: #f8fafc;
+  --off-white: #cbd5e1;
+  --error: #dc2626;
+  --sucess: #16a34a;
+  --hover: #ede9fe;
+  --hover_chip: #6b7280;
+  --chip-background: #94a3b8;
+}
+
+.chip_container {
+  margin: 1rem;
+  background-color: var(--off-white);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--primary-color);
+  width: max-content;
+  padding: 1rem;
+  height: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.smallTitle {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.smallTitle,
+.chip-area {
+  padding: 0.5rem;
+}
+
+.chip {
+  background-color: var(--chip-background);
+  max-width: max-content;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chip-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  margin-right: 0.5rem;
+  transition: 0.2s ease-out;
+}
+
+.chip:hover {
+  background-color: var(--hover_chip);
+  cursor: pointer;
+}
+
+.chip-actions {
+  font-weight: bold;
+}
+
+.addChips {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem;
+  outline: none;
+  width: 100%;
+  height: 2rem;
+  transition: 0.1s;
+  flex-shrink: 1;
+  background-color: var(--chip-background);
+  margin: 0.5rem;
+}
+input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.smallTitle {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

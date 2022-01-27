@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #5b21b6;
+  --white: #f8fafc;
+  --off-white: #cbd5e1;
+  --error: #dc2626;
+  --sucess: #16a34a;
+}
+
+.snackBar_outline {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.25);
+  padding-left: 1rem;
+  border-radius: 5px;
+  visibility: hidden;
+}
+.pos1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pos2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.pos3 {
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}
+.snackBar_action {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+.snackBar-icon {
+  margin: 0.5rem;
+}
+
+span > a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.dark {
+  background-color: var(--primary-color);
+}
+.light {
+  color: white;
+}
+
+.error {
+  background-color: var(--error);
+  /* display: flex; */
+}
+
+.success {
+  background-color: var(--sucess);
+  /* display: flex; */
+}

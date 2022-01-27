@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #5b21b6;
+  --secondary-color-light: #c4b5fd;
+  --white: #f8fafc;
+  --off-white: #cbd5e1;
+  --error: #dc2626;
+  --sucess: #16a34a;
+  --hover: #ede9fe;
+  --hover_chip: #6b7280;
+  --chip-background: #94a3b8;
+}
+
+.tab__layout {
+  width: 25rem;
+
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color: var(--white);
+}
+
+.tab-sections {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.tab-index {
+  cursor: pointer;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem;
+}
+.tab-index.active {
+  color: var(--secondary-color);
+
+  background-color: var(--secondary-color-light);
+  border-radius: 2rem;
+}
+.tab-content {
+  margin-left: 1.5rem;
+}
+.other-tabs {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.go-to-tab {
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--secondary-color-light);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}

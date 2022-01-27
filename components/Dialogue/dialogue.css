@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #5b21b6;
+  --white: #f8fafc;
+  --off-white: #cbd5e1;
+  --error: #dc2626;
+  --sucess: #16a34a;
+  --hover: #ede9fe;
+}
+
+.dialogue_window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  width: fit-content;
+  /* flex-wrap: wrap; */
+
+  color: var(--white);
+  box-sizing: border-box;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+
+.dialogue_header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  /* align-self: flex-start; */
+}
+.dialogue_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  font-size: 1rem;
+}
+
+.dialogue_email {
+  margin: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin: 0.3rem;
+}
+.dialogue_action {
+  margin: 0.5rem;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.type-2-pos {
+  align-self: flex-end;
+}
+.long {
+  max-width: 30rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+.action_btn {
+  color: var(--secondary-color);
+  margin: 0.5rem;
+}
+
+.item > span > input {
+  margin: 0.5rem;
+}
+
+.item {
+  font-size: 1.2rem;
+}
+
+.sx-scroll {
+  height: 18rem;
+}
+
+.scroll {
+  overflow-y: scroll;
+}

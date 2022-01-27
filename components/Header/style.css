@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #5b21b6;
+  --white: #f8fafc;
+  --off-white: #cbd5e1;
+  --error: #dc2626;
+  --sucess: #16a34a;
+}
+.brand {
+  margin: 0;
+  position: sticky;
+  top: 0.01px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  width: 100%;
+  /* padding: 1rem; */
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.35);
+}
+
+.brand-items {
+  display: flex;
+  margin-left: 2rem;
+  flex-shrink: 1;
+  /* justify-content: space-between; */
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.brand-actions {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.7rem;
+  transition: 0.2s;
+}
+
+.navbar_header {
+  transition: 0.2s;
+  margin: 0.7rem;
+  padding: 0.5rem;
+}
+.navbar_header:hover {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+/* .email,
+.notifs,
+.profile {
+  margin: 0.7rem;
+  padding: 0.5rem;
+  transition: 0.2s;
+}
+
+.email:hover,
+.notifs:hover,
+.profile:hover {
+  background-color: #8b5cf6;
+  border-radius: 50%;
+} */
+.left-nav-item {
+  margin: 0.7rem;
+  padding: 0.5rem;
+
+  transition: 0.2s;
+  font-weight: bold;
+  /* font-variant: small-caps; */
+}
+
+.left-nav-item a {
+  color: var(--white);
+}
+
+.left-nav-item:hover {
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+}
+
+.left-nav-item > a > i {
+  font-size: 1.5rem;
+  transition: 0.2s;
+  color: var(--white);
+}
+.navbar_header > a > i {
+  font-size: 1.5rem;
+  transition: 0.2s;
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-nav-item > a > i {
+    font-size: 1rem;
+  }
+  .left-nav-item {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .left-nav-item {
+    display: none;
+  }
+  .brand-items {
+    margin-left: 1rem;
+  }
+}

@@ -5,20 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e612b5b46f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="./components/Drawer/trial.css" /> -->
+    <link rel="stylesheet" href="./components/Header/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./components/Drawer/trial.css" />
   </head>
   <body>
-    <header>
-      <div class="brand">
-        <div class="brand__icon">Hello</div>
-        <div class="brand__hero"></div>
-        <div class="brand__version smallText"></div>
-        <div class="brand__content"></div>
+    <div class="brand">
+      <div class="brand-items">
+        <div class="navbar_header">
+          <a href="./index.html"><i class="fas fa-bars"></i></a>
+        </div>
+        <div class="brand-name">PixelCSS</div>
       </div>
-      <div class="left-nav">
-        <nav>
-          <li></li>
-        </nav>
+      <div class="brand-actions">
+        <div class="left-nav-item">
+          <a href="">Components</a>
+        </div>
+        <div class="left-nav-item">
+          <a href=""><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="left-nav-item">
+          <a href=""><i class="fas fa-bell"></i></a>
+        </div>
+        <div class="left-nav-item">
+          <a href=""><i class="fas fa-user-circle"></i></a>
+        </div>
       </div>
-    </header>
+    </div>
+
+    <div class="body">
+      <div class="sidebar">
+        <div class="nav-container">
+          <ul>
+            <div class="nav-cat">Component Library</div>
+            <div>
+              <li class="nav-segment">
+                <a href="./components/Card/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i>
+                  <span class="item">Card</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Chips/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Chips</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Drawer/trial.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Drawer</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Header/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Header</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/SnackBar/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">SnackBar</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Tabs/tab1.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Tabs </span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Dialogue/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Dialogue</span></a
+                >
+              </li>
+              <li class="nav-segment">
+                <a href="./components/Badge/index.html"
+                  ><i class="fas fa-chevron-right side_i"></i
+                  ><span class="item">Badge</span></a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="left-section">
+        <h2 class="body-head">Welcome to PixelCSS</h2>
+        <p class="body-content">
+          This is a first class CSS Framework reusable to ease development of
+          utility components. This is a simple and modular/extenisble library
+          that you can use to build your react applications.
+        </p>
+        <button class="get-started">
+          <a href="./components/Card/index.html"> Get Started</a>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
